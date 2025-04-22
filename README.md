@@ -25,11 +25,10 @@ Proyek ini merupakan kumpulan berbagai model smart car yang dirancang menggunaka
 - 🧠 ESP32 Dev Module
 - 🎮 PS2 Controller + Receiver
 - 🔊 Sensor Ultrasonic HC-SR04
-- 🔌 Motor Driver (L298N / MX1508 / L9110S)
+- 🔌 Motor Driver (L298N)
 - 🔋 Power Supply (Li-ion / Baterai 18650)
 - 🚘 Rangka Mobil Robot 4WD / 2WD
 - 📶 Wi-Fi Router / Smartphone (untuk mode Wi-Fi)
-- 🖥️ OLED Display (untuk model tertentu)
 
 ---
 
@@ -62,10 +61,9 @@ Jika kamu memiliki model smart car versi kamu sendiri, kamu bisa:
 
 ---
 
-## 🧑‍💻 Author
-
-Made with ❤️ by **[Your Name]**  
-📫 Instagram: [@yourusername](https://instagram.com/yourusername)  
+## 🧑‍💻 Author  
+📫 Instagram: [@aspa.zl](https://www.instagram.com/aspa.zl?igsh=eWV6Z244eTFxajh4)  
+📫 Instagram: [@_electricalworkshop](https://www.instagram.com/_electricalworkshop/profilecard/?igsh=b3E5eXg5MWg3Zmd1)  
 🎓 Mahasiswa Informatika | Penggemar IoT & Robotika
 
 ---
