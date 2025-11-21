@@ -8,7 +8,7 @@ Proyek ini merupakan kumpulan berbagai model smart car yang dirancang menggunaka
 ## 🔧 Fitur Unggulan
 
 - 🎮 **Kontrol Manual via PS2 Controller**
-- 🎮 **Kontrol Manual via App**  
+- 📱 **Kontrol Manual via App**  
 - 🤖 **Mode Otomatis "Follow Me" menggunakan Sensor Ultrasonic**  
 - 🌐 **Kontrol Melalui Wi-Fi (pada model tertentu)**  
 - ⚙️ **Modular Code** — Mudah disesuaikan dengan berbagai bentuk dan konfigurasi smart car  
@@ -22,13 +22,13 @@ Proyek ini merupakan kumpulan berbagai model smart car yang dirancang menggunaka
 
 ## 🛠️ Perangkat Keras yang Digunakan
 
-- 🧠 ESP32 Dev Module
+- 🧠 ESP32 
 - 🎮 PS2 Controller + Receiver
 - 🔊 Sensor Ultrasonic HC-SR04
 - 🔌 Motor Driver (L298N)
 - 🔋 Power Supply (Li-ion / Baterai 18650)
 - 🚘 Rangka Mobil Robot 4WD / 2WD
-- 📶 Wi-Fi Router / Smartphone (untuk mode Wi-Fi)
+- 📶 Wi-Fi Smartphone (untuk mode Wi-Fi)
 
 ---
 
