@@ -22,7 +22,7 @@ Proyek ini merupakan kumpulan berbagai model smart car yang dirancang menggunaka
 
 ## 🛠️ Perangkat Keras yang Digunakan
 
-- 🧠 ESP32 
+- 🧠 ESP32/Wemos D1 Mini
 - 🎮 PS2 Controller + Receiver
 - 🔊 Sensor Ultrasonic HC-SR04
 - 🔌 Motor Driver (L298N)
