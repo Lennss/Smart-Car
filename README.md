@@ -22,11 +22,11 @@ Proyek ini merupakan kumpulan berbagai model smart car yang dirancang menggunaka
 
 ## 🛠️ Perangkat Keras yang Digunakan
 
-- 🧠 ESP32|Wemos D1 Mini
+- 🧠 ESP32 | Wemos D1 Mini
 - 🎮 PS2 Controller + Receiver
 - 🔊 Sensor Ultrasonic HC-SR04
-- 🔌 Motor Driver (L298N)
-- 🔋 Power Supply (Li-ion / Baterai 18650)
+- ⚙️ Motor Driver (L298N)
+- 🔋 Power Supply Max 12V (Li-ion / Baterai 18650)
 - 🚘 Rangka Mobil Robot 4WD / 2WD
 - 📶 Wi-Fi Smartphone (untuk mode Wi-Fi)
 
