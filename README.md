@@ -64,7 +64,6 @@ Jika kamu memiliki model smart car versi kamu sendiri, kamu bisa:
 ## 🧑‍💻 Author  
 📫 Instagram: [@aspa.zl](https://www.instagram.com/aspa.zl?igsh=eWV6Z244eTFxajh4)  
 📫 Instagram: [@_electricalworkshop](https://www.instagram.com/_electricalworkshop/profilecard/?igsh=b3E5eXg5MWg3Zmd1)  
-🎓 Mahasiswa Informatika | Penggemar IoT & Robotika
 
 ---
 
