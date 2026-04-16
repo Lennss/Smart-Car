@@ -120,11 +120,11 @@
 ### Langkah Soldering yang Benar
 
 ```
-STEP 1         STEP 2         STEP 3         STEP 4
-Panaskan  ──►  Posisikan ──►  Sentuh    ──►  Tempel
-solder         komponen       solder ke      timah ke
-30 detik       di tempatnya   JOINT (bukan   joint hingga
-                              ke timah!)     mengalir
+STEP 1         STEP 2             STEP 3             STEP 4
+Panaskan  ──►  Posisikan     ──►  Sentuh        ──►  Tempel
+solder         komponen           solder ke          timah ke
+               di tempatnya       JOINT (bukan       joint hingga
+                                  ke timah!)         mengalir
 ```
 
 ### ✅ Hasil Baik vs ❌ Hasil Buruk
@@ -135,7 +135,8 @@ solder         komponen       solder ke      timah ke
 - Jangan terlalu lama tempel solder (max 3 detik per titik)
 - Timah yang terlalu banyak = short circuit
 - Timah yang terlalu sedikit = koneksi buruk
-- Bersihkan ujung solder dengan spons basah secara berkala
+- Bersihkan ujung solder dengan spons/kawat secara berkala
+- Gunakan flux jika timah tidak menempel
 
 ---
 
