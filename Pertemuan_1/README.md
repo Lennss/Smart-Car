@@ -59,7 +59,7 @@
 
 ### ESP32 Dev Kit V1 ← Board yang kita pakai
 
-![ESP32 Dev Kit V1 Pinout](../assets/esp32_pinout.png)
+![ESP32 Dev Kit V1 Pinout](../images/esp32_pinout.png)
 
 **Pin penting untuk robocar:**
 
@@ -84,7 +84,7 @@
 
 ### Arduino UNO Rev3 — Referensi
 
-![Arduino UNO Rev3 Pinout](../assets/arduino_pinout.png)
+![Arduino UNO Rev3 Pinout](../images/arduino_pinout.png)
 
 **Perbedaan utama vs ESP32:**
 - Pin digital `D0–D13`, analog `A0–A5`
@@ -96,7 +96,7 @@
 
 ### ESP8266 NodeMCU — Referensi WiFi Murah
 
-![ESP8266 NodeMCU Pinout](../assets/esp8266_pinout.png)
+![ESP8266 NodeMCU Pinout](../images/esp8266_pinout.png)
 
 **Catatan jika pakai ESP8266:**
 - Semua GPIO beroperasi di **3.3V**
@@ -161,6 +161,8 @@ solder         komponen       solder ke      timah ke
 ```
 
 ### ✅ Hasil Baik vs ❌ Hasil Buruk
+
+![Arduino UNO Rev3 Pinout](../images/solder_guide.jpg)
 
 ```
      ✅ BAIK                    ❌ BURUK (Cold Joint)
