@@ -6,8 +6,6 @@
 [![Durasi](https://img.shields.io/badge/Durasi-3--4_Jam-blue?style=flat-square)]()
 [![Board](https://img.shields.io/badge/Board-ESP32_Dev_Kit_V1-red?style=flat-square&logo=espressif)]()
 
-> *"Semua robot canggih dimulai dari satu LED yang berkedip."*
-
 </div>
 
 ---
@@ -20,19 +18,6 @@
 - [x] Install Arduino IDE + board ESP32
 - [x] Upload program pertama ke ESP32
 - [x] Menggerakkan motor DC lewat L298N
-
----
-
-## 📦 Komponen Pertemuan Ini
-
-| Komponen | Fungsi | Catatan |
-|---|---|---|
-| **ESP32 Dev Kit V1** | Otak robocar | Punya WiFi & BT built-in |
-| **L298N Motor Driver** | Jembatan ESP32 ↔ Motor | Butuh daya terpisah |
-| **Motor DC × 2** | Penggerak roda kiri & kanan | 3–9V DC |
-| **Baterai 7.4V (2S LiPo)** | Sumber daya utama | Bisa diganti power bank 5V |
-| **Kabel Jumper** | Koneksi antar komponen | Siapkan warna berbeda |
-| **Breadboard** | Uji coba rangkaian | Tanpa solder |
 
 ---
 
@@ -51,7 +36,7 @@
 | Harga kisaran | ~Rp 50rb | ~Rp 45rb | ~Rp 70rb |
 | **Digunakan di workshop** | Referensi | Referensi | ✅ **Board Utama** |
 
-> 💡 **Kenapa ESP32?** Pertemuan 3 kita pakai WiFi + Bluetooth untuk kontrol wireless. ESP32 adalah satu board yang cover semua kebutuhan workshop ini.
+> 💡 **Kenapa ESP32?** Karena ESP32 sudah ada WiFi + Bluetooth untuk kontrol wireless. ESP32 adalah satu board yang cover semua kebutuhan projek ini.
 
 ---
 
@@ -60,20 +45,6 @@
 ### ESP32 Dev Kit V1 ← Board yang kita pakai
 
 ![ESP32 Dev Kit V1 Pinout](../images/esp32_pinout.png)
-
-**Pin penting untuk robocar:**
-
-| GPIO | Fungsi di Workshop | Keterangan |
-|---|---|---|
-| `GPIO27` | Motor IN1 | Arah motor kiri |
-| `GPIO26` | Motor IN2 | Arah motor kiri |
-| `GPIO25` | Motor IN3 | Arah motor kanan |
-| `GPIO33` | Motor IN4 | Arah motor kanan |
-| `GPIO14` | ENA (PWM) | Kecepatan motor kiri |
-| `GPIO12` | ENB (PWM) | Kecepatan motor kanan |
-| `GPIO2` | Built-in LED | Untuk blink test |
-| `VIN` | Input daya | Dari 5V L298N |
-| `GND` | Ground | Harus sama dengan L298N |
 
 > ⚠️ **Pin yang HARUS dihindari:**
 > - `GPIO0` → Boot mode selector
