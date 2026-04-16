@@ -175,52 +175,87 @@ Jika muncul error `Failed to connect to ESP32`:
 Program pertama — kedipkan built-in LED di GPIO2.
 
 ```cpp
-#define LED_PIN 2   // GPIO2 = built-in LED ESP32 Dev Kit V1
+// Esp32 
+int enA = 13, inA1 = 12, inA2 = 14, speedA = 255;
+int enB = 25, inB1 = 27, inB2 = 26, speedB = 150;
 
 void setup() {
-  pinMode(LED_PIN, OUTPUT);
+  pinMode(enA, OUTPUT);
+  pinMode(inA1, OUTPUT);
+  pinMode(inA2, OUTPUT);
+  pinMode(enB, OUTPUT);
+  pinMode(inB1, OUTPUT);
+  pinMode(inB2, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(LED_PIN, HIGH);  delay(1000);
-  digitalWrite(LED_PIN, LOW);   delay(1000);
+  maju();
+  delay(3000);
+
+  kanan();
+  delay(1500);
+
+  maju();
+  delay(3000);
+
+  kiri();
+  delay(1500);
+
+  mundur();
+  delay(2000);
+
+  stopMotor();
+  delay(2000);
 }
-```
 
-> 📂 File: [`01_blink_led/01_blink_led.ino`](./01_blink_led/01_blink_led.ino)
+// ================= GERAKAN =================
 
----
+void maju() {
+  digitalWrite(inA1, HIGH);
+  digitalWrite(inA2, LOW);
+  analogWrite(enA, speedA);
 
-### [02 — Serial Monitor](./02_serial_monitor/02_serial_monitor.ino)
-
-Komunikasi ESP32 ↔ komputer via USB. Tampilkan info chip.
-
-```cpp
-void setup() {
-  Serial.begin(115200);  // ← ESP32 pakai 115200, bukan 9600!
-  Serial.println(ESP.getChipModel());   // ESP32-D0WDQ6
-  Serial.print(ESP.getCpuFreqMHz());   // 240 MHz
+  digitalWrite(inB1, LOW);
+  digitalWrite(inB2, HIGH);
+  analogWrite(enB, speedB);
 }
+
+void mundur() {
+  digitalWrite(inA1, LOW);
+  digitalWrite(inA2, HIGH);
+  analogWrite(enA, speedA);
+
+  digitalWrite(inB1, HIGH);
+  digitalWrite(inB2, LOW);
+  analogWrite(enB, speedB);
+}
+
+void kanan() {
+  digitalWrite(inA1, LOW);
+  digitalWrite(inA2, HIGH);
+  analogWrite(enA, speedA);
+
+  digitalWrite(inB1, LOW);
+  digitalWrite(inB2, HIGH);
+  analogWrite(enB, speedB);
+}
+
+void kiri() {
+  digitalWrite(inA1, HIGH);
+  digitalWrite(inA2, LOW);
+  analogWrite(enA, speedA);
+
+  digitalWrite(inB1, HIGH);
+  digitalWrite(inB2, LOW);
+  analogWrite(enB, speedB);
+}
+
+void stopMotor() {
+  analogWrite(enA, 0);
+  analogWrite(enB, 0);
+}
+
 ```
-
-> 📂 File: [`02_serial_monitor/02_serial_monitor.ino`](./02_serial_monitor/02_serial_monitor.ino)
-
----
-
-### [03 — Motor Basic](./03_motor_basic/03_motor_basic.ino)
-
-Gerakkan motor pertama kali! Maju, mundur, belok, putar.
-
-```cpp
-// ESP32 pakai LEDC untuk PWM — berbeda dari analogWrite() Arduino!
-ledcSetup(CH_KIRI,  5000, 8);   // channel, freq, resolusi
-ledcAttachPin(ENA, CH_KIRI);
-ledcWrite(CH_KIRI, 200);        // kecepatan 0–255
-```
-
-> 📂 File: [`03_motor_basic/03_motor_basic.ino`](./03_motor_basic/03_motor_basic.ino)
-
----
 
 ## 🏋️ Latihan Mandiri
 
