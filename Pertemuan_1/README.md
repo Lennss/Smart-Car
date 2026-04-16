@@ -222,39 +222,12 @@ ledcWrite(CH_KIRI, 200);        // kecepatan 0–255
 
 ---
 
-## 📝 Perbedaan Kode: Arduino vs ESP8266 vs ESP32
-
-```cpp
-//  ═══════════════════╦══════════════════╦══════════════════════════
-//  ARDUINO UNO        ║ ESP8266 NodeMCU  ║ ESP32 Dev Kit V1
-//  ═══════════════════╬══════════════════╬══════════════════════════
-Serial.begin(9600);   ║ Serial.begin(    ║ Serial.begin(115200);
-                      ║   115200);       ║
-                      ║                  ║
-analogWrite(5, val);  ║ analogWrite(D5,  ║ ledcSetup(ch, 5000, 8);
-// 6 pin PWM saja     ║   val);          ║ ledcAttachPin(pin, ch);
-                      ║ // semua GPIO    ║ ledcWrite(ch, val);
-                      ║                  ║ // semua GPIO!
-                      ║                  ║
-// Tidak ada WiFi     ║ #include<ESP8266 ║ #include <WiFi.h>
-                      ║   WiFi.h>        ║
-                      ║                  ║
-// Tidak ada BT       ║ // Tidak ada BT  ║ #include <BluetoothSerial.h>
-                      ║                  ║
-// LED = pin 13       ║ // LED = GPIO2   ║ // LED = GPIO2
-//  ═══════════════════╩══════════════════╩══════════════════════════
-```
-
----
-
 ## 🏋️ Latihan Mandiri
 
-| # | Latihan | Hint | Level |
+| # | Latihan | Hint |
 |---|---|---|---|
-| 1 | LED berkedip pola SOS `... --- ...` | `delay()` berbeda untuk titik & garis | 🟢 |
-| 2 | Tampilkan info chip ESP32 di Serial Monitor | `ESP.getChipModel()`, `ESP.getFreeHeap()` | 🟢 |
-| 3 | Robocar: maju 2s → belok kiri → maju 2s → belok kanan → stop | Kombinasi fungsi motor | 🟡 |
-| 4 | Akselerasi halus: speed naik 0→200 lalu turun 200→0 | `for` loop + `ledcWrite()` | 🔴 |
+| 1 | Robocar: maju 2s → belok kiri → maju 2s → belok kanan → stop | Kombinasi fungsi motor |
+| 2 | Akselerasi halus: speed naik 0→200 lalu turun 200→0 | Atur kecepatannya |
 
 ---
 
@@ -345,12 +318,6 @@ Kemungkinan GPIO0 tertarik ke GND. Pastikan tidak ada kabel yang nyambung ke GPI
 ---
 
 <div align="center">
-
-## ➡️ Lanjut ke Pertemuan Berikutnya
-
-**[Pertemuan 2 — Coding Lanjutan & Logika Pergerakan →](../pertemuan-2/README.md)**
-
----
 
 *[⬆ Kembali ke Halaman Utama](../README.md)*
 
